@@ -1,10 +1,12 @@
 {
     "domain": "matterbridge",
-    "name": "Whatsapp notifier based on matterbridge that can send messages to group",
+    "name": "Matterbridge notifier basde on matterbridge and can send notifications to many channels",
+    "codeowners": [
+    "@t0mer"
+    ],
     "documentation": "https://github.com/t0mer/matterbridge-custom-notifier",
-    "dependencies": [],
-    "codeowners": ["Tomer Klein"],
-    "requirements": ["requests"],
     "iot_class": "local_polling",
+    "issue_tracker": "https://github.com/t0mer/matterbridge-custom-notifier/issues",
+    "requirements": ["requests"],
     "version": "0.1.0"
 }
