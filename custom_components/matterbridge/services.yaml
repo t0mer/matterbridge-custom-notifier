@@ -1,0 +1,7 @@
+notify:
+  description: "Send a notification using ma-nish"
+  fields:
+    message:
+      description: The message to send
+      example: "Hello World"
+    
