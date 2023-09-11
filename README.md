@@ -13,10 +13,10 @@
 You will also need to fid the jid (Group identifier) of the group you want to send the notifications to. You can get the JID from whatsapp web.
 
 Open whatsapp web and navigate to the relevant group:
-![Whatsapp web](screenshots/smart_home_group.png)
+![Whatsapp web](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/smart_home_group.png)
 
 Open Developer tools, click the inspect toll and click on one of the messages:
-![Developer tools](screenshots/jid.png)
+![Developer tools](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/jid.png)
 
 In the data-id you will see string that looks like that: **true_1203631xxxxxxxxx @g.us_3EB072082B43E417EA35_xxxxxxxxxxxx@c.us**.
 Copy the part that start right after **true_** and ends with **@g.us**. this is the JID you will need.
@@ -87,11 +87,11 @@ enable=true
 Now, run matterbridge (If you get a permission errors, run chmod +x matterbridge to give execute permissions).
 If everything goes well, you should see a QR code. Go to the whatsapp app and under Linked devices scan it:
 
-![QR Code](screenshots/qr.png)
+![QR Code](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/qr.png)
 
 After a successfull scan, you will see it in the linked devices list under the name **whatsmeow** which is the library that matterbridge is based on.
 
-![Linked devices](screenshots/linked_devices.png)
+![Linked devices](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/linked_devices.png)
 
 ### Set matterbridge to start on system startup
 As for now, this version of matterbridge that supports multi devices can be installed as System service and I'm working in a docker container version.
@@ -148,3 +148,24 @@ You can also view the log by running
 ```bash
 tail -f /var/log/matterbridge.log
 ```
+
+## Add the custom notifier to homeassistant
+To add matterbridge reposiroty to HACS, Open you Homeassistant application and navigate to HACS:
+![HACS](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/hacs.png)
+
+Then click on Integrations:
+![Integrations](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/integrations.png)
+
+On the upper right corner, click the three dots and select Custom repositories;
+![Custom repositories](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/custom_repos.png)
+
+Under repository, paste the following address: **https://github.com/t0mer/matterbridge-custom-notifier**
+
+And Under category, select Integration:
+![Repo details](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/repo_details.png)
+
+And click **ADD**.
+
+You can now see that the *Matterbridge" was added to the custom repositories list:
+![Custom Repo Added](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/repo_added.png)
+
