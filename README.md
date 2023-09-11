@@ -151,17 +151,21 @@ tail -f /var/log/matterbridge.log
 
 ## Add the custom notifier to homeassistant
 To add matterbridge reposiroty to HACS, Open you Homeassistant application and navigate to HACS:
+
 ![HACS](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/hacs.png)
 
 Then click on Integrations:
+
 ![Integrations](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/integrations.png)
 
-On the upper right corner, click the three dots and select Custom repositories;
+On the upper right corner, click the three dots and select Custom repositories:
+
 ![Custom repositories](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/custom_repos.png)
 
 Under repository, paste the following address: **https://github.com/t0mer/matterbridge-custom-notifier**
 
 And Under category, select Integration:
+
 ![Repo details](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/repo_details.png)
 
 And click **ADD**.
