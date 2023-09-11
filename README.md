@@ -207,6 +207,6 @@ data:
 And click *Call Service*
 
 
-#Notes
+# Notes
 * Matterbridge is not officially supported by Whatsapp. It's an open source written in GO.
 * In the matterbridge configuration you can add many gateways to send notifications to different groups by using multiple gateways. This is the reason that you can specify gateway name as target in the payload.
