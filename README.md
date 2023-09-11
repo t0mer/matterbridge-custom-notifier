@@ -18,7 +18,7 @@ Open whatsapp web and navigate to the relevant group:
 Open Developer tools, click the inspect toll and click on one of the messages:
 ![Developer tools](screenshots/jid.png)
 
-In the data-id you will see string that looks like that: **true_1203631xxxxxxxxx@g.us_3EB072082B43E417EA35_xxxxxxxxxxxx@c.us**.
+In the data-id you will see string that looks like that: **true_1203631xxxxxxxxx @g.us_3EB072082B43E417EA35_xxxxxxxxxxxx@c.us**.
 Copy the part that start right after **true_** and ends with **@g.us**. this is the JID you will need.
 
 
