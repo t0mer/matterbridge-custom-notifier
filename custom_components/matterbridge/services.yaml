@@ -1,5 +1,5 @@
 notify:
-  description: "Send a notification using ma-nish"
+  description: "Send a notification using matterbridge"
   fields:
     message:
       description: The message to send
