@@ -1,6 +1,4 @@
 import logging
-from manish import MaNish
-from manish.template import *
 import voluptuous as vol
 import requests
 import homeassistant.helpers.config_validation as cv

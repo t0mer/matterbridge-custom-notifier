@@ -173,3 +173,40 @@ And click **ADD**.
 You can now see that the *Matterbridge" was added to the custom repositories list:
 ![Custom Repo Added](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/repo_added.png?raw=true)
 
+Tou can now add matterbridge custom component from HACS.
+
+## Configure homeassistant to use matterbridge.
+First, afetr the custom component installation, make sure you restarted home assistant.
+
+### configuration.yaml
+To work with matterbridge, add the following code to your configuration.yaml file:
+```yaml
+
+notify:
+  - platform: matterbridge
+    name: #Firendly name for the application
+    nickname: #The name for the sender that appears in the message
+    url: #URL for the matterbridge API. the url should end with "/api/message"
+    token: #The token you entered in the matterbridge configuration file.
+```
+
+Save the file and restart Home-assistant.
+
+### Sending test notification
+In Home assistant, under Developer tools go to services and find matterbridge notification service. 
+
+Insert the following lines:
+
+```yaml
+service: notify.matter_whatsapp_notifire
+data:
+  title: #Title for the message (Required!)
+  message: #Message to send
+    target: #Gateway name from the matterbridge configuration file
+```
+And click *Call Service*
+
+
+#Notes
+* Matterbridge is not officially supported by Whatsapp. It's an open source written in GO.
+* In the matterbridge configuration you can add many gateways to send notifications to different groups by using multiple gateways. This is the reason that you can specify gateway name as target in the payload.
