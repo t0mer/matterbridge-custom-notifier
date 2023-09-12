@@ -1,15 +1,7 @@
 notify:
-  matterbridge-custom-notifier:
-    name: "Matterbridge custom notification"
-    description: "Send a notification using matterbridge"
-  fields:
-    message:
-      description: The message to send
-      example: "Hello World"
-    target:
-      description: The name of the configured gateway within matterbridge configuration
-      example: "gateway1"
-    title:
-      description: The title of the message
-      example: "Alert!"
-    
+  - name: matterbridge-custom-notifier
+    description: Send a notification using Matterbridge
+    fields:
+      message:
+        description: The message to send
+        example: 'Hello, World!'
