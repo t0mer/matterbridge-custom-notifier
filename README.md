@@ -9,10 +9,10 @@
 
 ## Getting started
 
-### Get whatsapp group id (JID) from whatsapp web
-You will also need to fid the jid (Group identifier) of the group you want to send the notifications to. You can get the JID from whatsapp web.
+### Get WhatsApp group id (JID) from WhatsApp web
+You will also need to fid the jid (Group identifier) of the group you want to send the notifications to. You can get the JID from WhatsApp web.
 
-Open whatsapp web and navigate to the relevant group:
+Open WhatsApp web and navigate to the relevant group:
 ![Whatsapp web](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/smart_home_group.png?raw=true)
 
 Open Developer tools, click the inspect toll and click on one of the messages:
@@ -23,7 +23,7 @@ Copy the part that start right after **true_** and ends with **@g.us**. this is 
 
 
 ### Setting up matterbridge
-First, create a new firectory named matterbridge under /opt and download the matterbridge pre-compiled bunary:
+First, create a new firectory named matterbridge under /opt and download the matterbridge pre-compiled binary:
 
 * [Linux ARM](https://matter.techblog.co.il/linux_arm/matterbridge)
 * [Linux ARM64](https://matter.techblog.co.il/linux_arm64/matterbridge)
