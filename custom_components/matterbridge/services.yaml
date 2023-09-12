@@ -1,7 +1,7 @@
 notify:
-  - name: matterbridge-custom-notifier
-    description: Send a notification using Matterbridge
-    fields:
-      message:
-        description: The message to send
-        example: 'Hello, World!'
+  name: matterbridge-custom-notifier
+  description: Send a notification using Matterbridge
+  fields:
+    message:
+      description: The message to send
+      example: 'Hello, World!'
