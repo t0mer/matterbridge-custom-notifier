@@ -10,7 +10,7 @@
 ## Getting started
 
 ### Get WhatsApp group id (JID) from WhatsApp web
-You will also need to fid the jid (Group identifier) of the group you want to send the notifications to. You can get the JID from WhatsApp web.
+You will also need to find the jid (Group identifier) of the group you want to send the notifications to. You can get the JID from WhatsApp web.
 
 Open WhatsApp web and navigate to the relevant group:
 ![Whatsapp web](https://github.com/t0mer/matterbridge-custom-notifier/blob/main/screenshots/smart_home_group.png?raw=true)
